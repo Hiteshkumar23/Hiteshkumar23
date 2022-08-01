@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-color: #D6001B;
+    --secondary-color: #272341;
+    --white-bg: #ffffff;
+    --light-bg: #F4F2E9;
+
+}
+
+
+
+.logo{
+    width: 240px;
+}
+
+.navbar h6{
+    font-size: 20px;
+}
+
+.phone-icon{
+    filter: invert(14%) sepia(83%) saturate(5727%) hue-rotate(347deg) brightness(81%) contrast(110%);
+    width: 25px;
+    
+}
+
+.nav-icons-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-div{
+    background-color: var(--white-bg) ;
+    padding: 8px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.nav-icons-div a h6:hover{
+    color: var(--secondary-color);
+   
+}
+
+.phone-div{
+    margin-right: 35px;
+    
+}
+
+.email-div{
+    display: flex;
+}
+
+/* --------Content -section----- */
+
+.content-wrapper{
+    border-radius: 5%;    
+    background-color: var(--light-bg);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0!important;
+    height: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+
+
+
+.left-side-div{
+    display: flex;
+    position: relative;
+    margin: 0!important;
+    padding: 0!important;
+    height: 100%!important;
+}
+
+.bestseller{
+    position: absolute;
+    background-color: var(--primary-color);
+    border-top-left-radius: 5px;
+    padding: 5px;
+    width: 220px;
+    top: 0;
+    left: 0;
+}
+
+.bestseller img{
+    width: 24px;
+    /* margin-bottom: 16px; */
+    filter: invert(100%) sepia(80%) saturate(2%) hue-rotate(134deg) brightness(109%) contrast(101%);
+    /* margin: 5px; */
+}
+
+.bestseller h5{
+    font-size: 20px;
+    /* margin-top: 5px; */
+    padding-top: 11px;
+    margin-left: 15px!important;
+}
+
+.girl-img {
+    position: absolute;
+    bottom: 0;
+    left: 20;
+   
+}
+
+.left-sidebar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.main-content{
+    position: relative;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.main-content .logo2{
+    width: 220px;
+    position: relative;
+    float: right;
+}
+
+.main-heading{
+    text-align: right;
+    font-size: 42px;
+    font-weight: 400;
+    margin-top: 80px;
+   
+}
+
+.main-heading span{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.secondary-heading{
+    text-align: right!important;
+}
+
+.text-with-icon{
+    position: relative;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    /* width: 220px; */
+    right: 0;
+    display: flex;
+}
+
+.text-with-icon img{
+    width: 28px;
+    margin-bottom: 7px;
+    filter: invert(100%) sepia(80%) saturate(2%) hue-rotate(134deg) brightness(109%) contrast(101%);
+    margin-right: 5px;
+    /* margin: 5px; */
+}
+
+.text-with-icon h5{
+    font-size: 22px;
+    
+}
+
+.main-content ul{
+    display: block;
+    margin-top: 10px;
+}
+
+.main-content ul li{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+   
+}
+
+.main-content ul li i{
+    color: var(--primary-color);
+
+}
+
+
+
+/* ----Right -sidebar---- */
+
+/* -----form-section---- */
+
+.right-sidebar{
+    background-color: var(--white-bg);
+    padding: 5px;
+}
+
+.form-heading{
+    font-size: 26px;
+    /* margin-top: 1rem; */
+}
+
+input:focus{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+
+}
+
+
+input[type=text],input[type=email],textarea{
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    background-color: #F6F9FE!important;
+}
+
+input[type=submit]{
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+    background-color: var(--secondary-color)!important;
+}
+
+::-webkit-input-placeholder{
+    font-size: 19px!important;
+    color: var(--light);
+}
+
+form{
+    border: none!important;
+    outline: none!important;
+}
+
+.input-label{
+    font-size: 16px!important;
+    font-weight: 500;
+}
+
+.mobile-content{
+    display: none;
+}
+
+
+/* ------Media -- Queries------- */
+
+@media (max-width: 990px){
+
+    .content-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-content{
+        padding: 1rem!important;
+    }
+
+    .main-heading{
+        font-size: 36px;
+    }
+    .left-side-div{
+        display: none;
+    }
+
+    .text-with-icon h5{
+        font-size: 18px;
+        
+    }
+
+
+}
+
+@media (max-width: 770px){
+
+    .logo{
+        width: 180px;
+    }
+
+    
+
+    .main-content .logo2{
+        display: none;
+    }
+
+
+    .content-wrapper{
+        grid-template-columns:  1fr;
+        grid-template-rows: auto;
+        margin: 1rem;
+        /* grid-auto-flow: dense; */
+        padding: 1rem!important;
+    }
+    .main-content{
+        padding: 1rem!important;
+    }
+
+    .main-heading{
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .text-with-icon h5{
+        font-size: 16px;
+        
+    }
+
+    .main-content ul li{
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 3px;
+       
+    }
+
+    .secondary-heading{
+        text-align: center!important;
+    }
+
+    .main-content ul{
+        display: none;
+    }
+    
+    .mobile-content{
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .desktop-content{
+        display: none;
+    }
+
+    .mobile-content ul{
+        text-align: left;
+        margin-top: 1rem;
+    }
+    .mobile-content ul li{
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 5px;
+       
+    }
+    
+    .mobile-content ul li i{
+        color: var(--primary-color);
+        margin-right: 5px;
+    
+    }
+
+    .email-div{
+        display: none;
+    }
+
+    .phone-div h6{
+        font-size: 16px;
+    }
+
+    .phone-div{
+        margin-right: 5px;
+        
+    }
+
+    .icon-div{
+        padding: 4px;
+    }
+}
+
+@media (max-width: 770px)
